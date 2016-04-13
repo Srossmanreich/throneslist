@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>Edit or delete your item or service for <%=@house.name%></h1>
+
+  <h3>Want to edit your item? Simply change the below:</h3>
+
+  <form method="POST" action="/articles/<%=@article.random_string%>/edit">
+    <p><textarea name="textarea1" rows="1" cols="50"><%=@article.title%></textarea></p>
+    <p><textarea name="textarea2" rows="10" cols="50"><%=@article.description%></textarea></p>
+    <p><textarea name="textarea3" rows="1" cols="50"><%=@article.price%></textarea></p>
+    <p><textarea name="textarea4" rows="1" cols="50"><%=@article.email%></textarea></p>
+    <p><input type="submit" value="Edit!"></p>
+  </form>
+
+  <hr>
+
+  <h3>To delete the item you're selling click the button below:</h3>
+
+  <form method="POST" action="/articles/<%=@article.random_string%>">
+  <input type="hidden" name="_method" value="DELETE">
+    <p><input type="submit" value="Delete?"></p>
+  </form>
+
+  <hr>
+
+  <h5><a href="/">Head back to the homepage</a></h5>
+
+</div>

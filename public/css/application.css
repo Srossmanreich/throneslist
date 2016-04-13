@@ -3,7 +3,32 @@
   width: 600px;
   padding: 0px 20px 20px 20px;
   border: 1px dotted black;
+  text-align: center;
 }
 th {
-  text-align: left;
+  text-align: center;
+}
+
+.all {
+  max-width: 80%;
+}
+
+.all_houses {
+  float: center;
+  display: inline-block;
+  margin: 10% 10%;
+  width: 12%;
+}
+
+.all_houses_text {
+  width: 150px;
+}
+
+.all_houses a {
+  text-decoration: none;
+}
+
+.all_houses a img {
+  width: 150px;
+  height: 180px;
 }

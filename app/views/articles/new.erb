@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>New sale item or service on behalf of <%=@house.name%></h1>
+
+  <hr>
+
+  <form method="POST" action="/categories/<%=@house.id%>/articles">
+    <p><textarea name="textarea1" rows="1" cols="50">Type your title here</textarea></p>
+    <p><textarea name="textarea2" rows="10" cols="50">Type your description here</textarea></p>
+    <p><textarea name="textarea3" rows="1" cols="50">Add your price here (integer in $'s)</textarea></p>
+    <p><textarea name="textarea4" rows="1" cols="50">Add your email here (so you can be contacted)</textarea></p>
+    <p><input type="submit" value="Submit!"></p>
+  </form>
+
+  <h5><a href="/categories/<%=@house.id%>">Head back to <%=@house.name%>'s homepage</a></h5>
+  <h5><a href="/">Head back to the homepage</a></h5>
+
+</div>
